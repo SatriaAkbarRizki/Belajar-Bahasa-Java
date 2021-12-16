@@ -17,4 +17,4 @@ Assalamualaikum. Selamat Datang di Repo milik saya. Kali ini saya membagikan pro
 ### Bagaiamana Cara menggunakannya?
 1. Anda donwload dulu folder bin dan src
 2. Lalu, setelah didownload. Silahkan buka terminal. masuk ke folder Program Multi Task
-3. Buka terminal lalu masukkan perintah ini `java bin.Program_MT.Program_MT`
+3. Lalu masukkan perintah ini `java bin.Program_MT.Program_MT`
