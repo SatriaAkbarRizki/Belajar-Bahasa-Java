@@ -1,2 +1,2 @@
-Berisi program" yang sudah selesai melakukan challenge
-Melakukan Challenge berasal dari web edabit
+Berisi program - program yang sudah selesai melakukan challenge unutk latih diri.
+
