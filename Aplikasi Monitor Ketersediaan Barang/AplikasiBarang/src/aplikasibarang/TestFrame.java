@@ -54,16 +54,22 @@ public static int bb[] = {2,4,6,7,8,9,0,3,2,7,9};
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButtonTambah = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jtotal = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTableBarang = new javax.swing.JTable();
+        jButtonTambah = new javax.swing.JButton();
         jButtonKurang = new javax.swing.JButton();
         jhistorY = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTableBarang = new javax.swing.JTable();
+        jLabel2 = new javax.swing.JLabel();
+        jButtonClose = new javax.swing.JButton();
+        jButtonMinimize = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setUndecorated(true);
         setResizable(false);
         addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
@@ -71,21 +77,81 @@ public static int bb[] = {2,4,6,7,8,9,0,3,2,7,9};
             }
         });
 
-        jButtonTambah.setText("Tambah");
-        jButtonTambah.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonTambahActionPerformed(evt);
-            }
-        });
+        jPanel1.setBackground(new java.awt.Color(238, 233, 233));
+        jPanel1.setPreferredSize(new java.awt.Dimension(803, 506));
 
+        jPanel2.setBackground(new java.awt.Color(51, 51, 255));
+
+        jLabel1.setFont(new java.awt.Font("DialogInput", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("JUMLAH BARANG");
 
+        jtotal.setBackground(new java.awt.Color(248, 243, 243));
         jtotal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtotalActionPerformed(evt);
             }
         });
 
+        jButtonTambah.setBackground(new java.awt.Color(248, 243, 243));
+        jButtonTambah.setText("Tambahkan Barang");
+        jButtonTambah.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonTambahActionPerformed(evt);
+            }
+        });
+
+        jButtonKurang.setBackground(new java.awt.Color(248, 243, 243));
+        jButtonKurang.setText("Pengurangan Barang");
+        jButtonKurang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonKurangActionPerformed(evt);
+            }
+        });
+
+        jhistorY.setBackground(new java.awt.Color(248, 243, 243));
+        jhistorY.setText("History Barang");
+        jhistorY.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jhistorYActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(57, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jtotal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonTambah, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonKurang, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jhistorY, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(49, 49, 49))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(78, 78, 78))))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jtotal, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButtonTambah, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButtonKurang, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jhistorY, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(78, 78, 78))
+        );
+
+        jTableBarang.setBackground(new java.awt.Color(248, 243, 243));
         jTableBarang.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -106,64 +172,78 @@ public static int bb[] = {2,4,6,7,8,9,0,3,2,7,9};
         });
         jScrollPane1.setViewportView(jTableBarang);
 
-        jButtonKurang.setText("Kurang");
-        jButtonKurang.addActionListener(new java.awt.event.ActionListener() {
+        jLabel2.setFont(new java.awt.Font("Liberation Mono", 2, 18)); // NOI18N
+        jLabel2.setText("Aplikasi Monitor Ketersediaan Barang");
+
+        jButtonClose.setBackground(new java.awt.Color(255, 51, 51));
+        jButtonClose.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        jButtonClose.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonClose.setText("x");
+        jButtonClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonKurangActionPerformed(evt);
+                jButtonCloseActionPerformed(evt);
             }
         });
 
-        jhistorY.setText("History");
-        jhistorY.addActionListener(new java.awt.event.ActionListener() {
+        jButtonMinimize.setBackground(new java.awt.Color(51, 51, 255));
+        jButtonMinimize.setFont(new java.awt.Font("Monospaced", 0, 13)); // NOI18N
+        jButtonMinimize.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonMinimize.setText("-");
+        jButtonMinimize.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButtonMinimize.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jhistorYActionPerformed(evt);
+                jButtonMinimizeActionPerformed(evt);
             }
         });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 448, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 521, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(434, 434, 434)
+                        .addComponent(jButtonMinimize, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButtonClose, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonClose, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonMinimize, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(29, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 733, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButtonTambah, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButtonKurang, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jhistorY, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(35, 35, 35))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(26, 26, 26)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jtotal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 99, Short.MAX_VALUE))
-                    .addGap(672, 672, 672)))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(73, 73, 73)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonTambah, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonKurang, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jhistorY, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(84, 84, 84)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(97, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(33, 33, 33)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(jtotal, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
-                    .addGap(375, 375, 375)))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 501, Short.MAX_VALUE)
         );
 
-        setSize(new java.awt.Dimension(813, 536));
+        setSize(new java.awt.Dimension(797, 497));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -176,12 +256,17 @@ public static int bb[] = {2,4,6,7,8,9,0,3,2,7,9};
         baranG();
     }//GEN-LAST:event_formComponentShown
 
-    private void jhistorYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jhistorYActionPerformed
-        FrameHistory Fhistory = new FrameHistory();
-        Fhistory.show();
+    private void jtotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtotalActionPerformed
+
+    }//GEN-LAST:event_jtotalActionPerformed
+
+    private void jButtonTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTambahActionPerformed
+        FrameTambah Ftambah = new FrameTambah();
+        Ftambah.show();
+        //close();
+        //Ftambah.setVisible(true);
         dispose();
-        //jhistorY.setText(namaString);
-    }//GEN-LAST:event_jhistorYActionPerformed
+    }//GEN-LAST:event_jButtonTambahActionPerformed
 
     private void jButtonKurangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonKurangActionPerformed
         //close();
@@ -191,25 +276,28 @@ public static int bb[] = {2,4,6,7,8,9,0,3,2,7,9};
         //Fkurang.setVisible(true);
     }//GEN-LAST:event_jButtonKurangActionPerformed
 
-    private void jTableBarangKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTableBarangKeyTyped
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTableBarangKeyTyped
+    private void jhistorYActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jhistorYActionPerformed
+        FrameHistory Fhistory = new FrameHistory();
+        Fhistory.show();
+        dispose();  
+        //jhistorY.setText(namaString);
+    }//GEN-LAST:event_jhistorYActionPerformed
 
     private void jTableBarangComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jTableBarangComponentShown
 
     }//GEN-LAST:event_jTableBarangComponentShown
 
-    private void jtotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtotalActionPerformed
+    private void jTableBarangKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTableBarangKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTableBarangKeyTyped
 
-    }//GEN-LAST:event_jtotalActionPerformed
-
-    private void jButtonTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTambahActionPerformed
-        //close();
-        FrameTambah Ftambah = new FrameTambah();
-        Ftambah.show();
-        //Ftambah.setVisible(true);
+    private void jButtonCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCloseActionPerformed
         dispose();
-    }//GEN-LAST:event_jButtonTambahActionPerformed
+    }//GEN-LAST:event_jButtonCloseActionPerformed
+
+    private void jButtonMinimizeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMinimizeActionPerformed
+        setState(JFrame.ICONIFIED);
+    }//GEN-LAST:event_jButtonMinimizeActionPerformed
     
   
 
@@ -249,9 +337,14 @@ public static int bb[] = {2,4,6,7,8,9,0,3,2,7,9};
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonClose;
     private javax.swing.JButton jButtonKurang;
+    private javax.swing.JButton jButtonMinimize;
     private javax.swing.JButton jButtonTambah;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    public javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTableBarang;
     private javax.swing.JButton jhistorY;
