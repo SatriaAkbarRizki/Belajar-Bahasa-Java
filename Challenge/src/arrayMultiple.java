@@ -18,7 +18,7 @@ public class arrayMultiple
         }
         for (int a = 1;a <= lengthArray.length;a++)
         {
-            System.out.printf ("%d\n", numArray[a]);
+            System.out.print("[" + numArray[a] + "]" + ", ");
         }
 
         return numArray;
