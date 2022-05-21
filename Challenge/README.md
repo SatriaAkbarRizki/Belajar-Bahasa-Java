@@ -74,3 +74,42 @@ Create a method that takes a string as its argument and returns the string in re
 
 #### Output
 <img width="1087" alt="reverseString" src="https://user-images.githubusercontent.com/75376635/168841809-868e421a-b5c0-4dfd-9a9c-3191826702d9.png">
+
+#### 6. stringCheck (Check if String Ending Matches Second String)
+Create a function that takes two strings and returns true if the first string ends with the second string; otherwise return false.
+```
+   Example:
+   checkEnding("abc", "bc") ➞ true
+   checkEnding("abc", "d") ➞ false
+   checkEnding("samurai", "zi") ➞ false
+   checkEnding("feminine", "nine") ➞ true
+   checkEnding("convention", "tio") ➞ false
+```
+#### Output
+<img width="1087" alt="stringCheck" src="https://user-images.githubusercontent.com/75376635/169660155-22b54b38-3e6a-4748-9544-f8217d6b7755.png">
+
+#### 7. sumtext_Auto (Get Word Count)
+Create a method that takes a string and returns the word count. The string will be a sentence.
+```
+   Example:
+   countWords("Just an example here move along") ➞ 6
+   countWords("This is a test") ➞ 4
+   countWords("What an easy task, right") ➞ 5
+```
+#### Output
+<img width="1087" alt="sumtext_Auto" src="https://user-images.githubusercontent.com/75376635/169660461-e82bdaca-5a17-477e-9def-fd6ab61f49fc.png">
+
+#### 8. sumText (Manual dengan input)
+#### Output
+<img width="1087" alt="sumText" src="https://user-images.githubusercontent.com/75376635/169660610-4cb9269d-c0ff-47ce-bc59-32e8613398ff.png">
+
+#### 9. sumTrue (How Much is True?)
+Create a function which returns the number of true values there are in an array.
+```
+   Example:
+   countTrue([true, false, false, true, false]) ➞ 2
+   countTrue([false, false, false, false]) ➞ 0
+   countTrue([]) ➞ 0
+```
+#### Output
+<img width="1087" alt="sumTrue" src="https://user-images.githubusercontent.com/75376635/169660810-fe4c7f3d-2213-4f8b-a523-20d2ef9aeac5.png">
